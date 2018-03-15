@@ -1,95 +1,185 @@
-html{
-	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
+html {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-.wrap;{
-	margin:0 auto;
-	width: 100%;
-	margin: 0px;
+.wrap;
+{
+    margin: 0 auto;
+    width: 100%;
+    margin: 0px;
 }
 
-.container{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center; 
-	align-content: center; 
-	margin: 0 auto;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
 }
-header{
-	height: 50px;
+
+header {
+    height: 50px;
+    background-color: WhiteSmoke;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    height: 25rem;
+    background-color: WhiteSmoke;
+    background-image: url("./img/main-1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.main .number {
+    z-index: 1;
+    background-color: LightSkyBlue;
+    width: 4rem;
+    padding: 20px;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.main h1 {
+    width: 25rem;
+    margin-left: 5px;
+    font-weight: lighter;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    border-bottom: solid LightSkyBlue .3rem;
+}
+
+div.container.ideas {
+    flex-direction: row !important;
+}
+
+div .container.concept {
+    width: 60%;
+    flex-direction: column;
+}
+
+div .container p {
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+div.side {
+    background-image: url("./img/main-1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    justify-content: center;
+    float: left;
+    width: 30%;
+    margin-left: 40px;
+}
+
+div.side h1 {
+    align-self: center;
+    width: 80%;
+}
+
+.quadruple {
+    flex-direction: row;
+    max-width: 100%;
+    height: 20vh;
+    margin-top: 30px;
+}
+
+div.values {
+    margin-left: 2px;
+    opacity: 0.4;
+    background: black;
+    width: 20%;
+    justify-content: center;
+}
+
+div.values:hover {
+    background-image: url("./img/images.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: ;
+}
+
+div.values h1 {
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 50px;
+}
+.about{
 	background-color: WhiteSmoke;
+	margin-top: 40px;
 }
-
-header a{
-	text-decoration: none;
-	color: black;
-	margin-left: 20px;
+.triple h1{
+	font-size: 1.3rem;
+	margin-left: 25px;
+	margin-bottom: 20px;
 	letter-spacing: 0.1rem;
-	font-size: 0.9rem;
 	text-transform: uppercase;
-	
 }
-.main{
-	display: flex;
-	flex-wrap: wrap;
+div.display{
 	flex-direction: row;
-	align-items: center;
-	justify-content: right; 
-	height: 25rem;
-	background-color: WhiteSmoke;
-	background-image: url("./img/main-1.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: right;
+	width: 100%;
 }
-.main .number{
-	z-index:1;
-	background-color: LightSkyBlue;
-	width: 4rem;
-	padding: 20px;
-	font-size: 2.5rem;
-	color: white;
-	font-weight: bolder;
+div.display span{
+	margin-top: 150px;
+	width: 40%;
 }
-.main h1{
-	width: 25rem;
-	margin-left: 5px;
-	font-weight: lighter;
-	letter-spacing: .2rem;
+div.display h1{
+	font-size: 1.3rem;
 	text-transform: uppercase;
-	border-bottom:solid LightSkyBlue .3rem;
 }
-div.container.ideas{
-	flex-direction:row !important;
+.img-container{
+	flex-direction: row;
+	width: 100%;
+	height:200px;
 }
-div .container.concept{
-	width: 50%;
-	height: 300px;
-	flex-direction: column;
+.img-container img{
+	width: 20%;
+	height: 20vh;
+	margin-left: 10px;
+	margin-top: 20px;
 }
-
-div.side{
-	background-image: url("./img/main-1.jpg");
-	background-size:80% 60%;
-	background-repeat: no-repeat;
-	background-position: right;
-	float: left;
-	width: 50%;	
-}
-
-@media only screen and ( max-width: 480px){
-	header a{
-		font-size: 0.6rem;
-	}
-	.main h1{
-	font-weight: bolder;
-	font-size:1rem;
-	width:30%;
-	margin-left:15px;
-	}
-	div.side{
-		background-size:100% 50%
-	}
+@media only screen and ( max-width: 480px) {
+    header a {
+        font-size: 0.6rem;
+    }
+    .main h1 {
+        font-weight: bolder;
+        font-size: 1rem;
+        width: 30%;
+        margin-left: 15px;
+    }
+    div.concept {
+        width: 30%;
+    }
+    div.side {
+        width: 60%;
+        background-size: 70%;
+        margin-left: 20px;
+    }
+    div.side h1 {
+        width: 60%;
+    }
+    div.values h1 {
+        font-size: 1rem;
+    }
 }
